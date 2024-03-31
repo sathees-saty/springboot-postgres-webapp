@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postgres</title>
+	<style>
+	table, th, td {
+	  border: 1px solid black;
+	}
+	</style>
+</head>
+<body>
+	Developing Spring Web Application using Postgres Database and JPA
+	<br></br>
+    <table>
+        <tr>
+            <th>EmpID</th>
+            <th>Name</th>
+            <th>DOB</th>
+            <th>Gender</th>
+        </tr>    
+        <tr th:each="employee : ${employeeData}">
+            <td th:text="${employee.getEmpid()}"></td>
+            <td th:text="${employee.getName()}"></td>
+            <td th:text="${employee.getDob()}"></td>
+            <td th:text="${employee.getGender()}"></td>
+        </tr>    
+    </table>
+</body>
+</html>
