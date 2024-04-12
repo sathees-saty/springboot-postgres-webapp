@@ -33,3 +33,6 @@ ALTER TABLE IF EXISTS public.employee
 SELECT empid, name, dob, gender
 	FROM public.employee;
 
+
+![image](https://github.com/sathees-saty/springboot-postgres-webapp/assets/65384711/be23c6ac-3ca3-4316-8145-1f7fc961c307)
+
